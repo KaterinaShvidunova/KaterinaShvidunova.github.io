@@ -1,0 +1,37 @@
+
+body {
+    background: #eee;
+}
+.page {
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 14px 5% 14px 5%;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px grey,-2px -2px 5px grey;
+    font-family: serif;
+}
+h1 {
+    text-align: center;
+}
+.photo {
+    width: 40%;
+    margin: auto;
+}
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 18px;
+    margin-left: 25px;
+    
+}
+li {
+    font-size: 18px;
+}
+hr {
+    margin: 14px;
+    width: 100%;
+    
+}
