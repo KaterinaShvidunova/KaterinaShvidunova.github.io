@@ -30,7 +30,8 @@ html,body {
     display: block;
     height: 40px;
     text-decoration: none;
-    color: white; 
+    color: white;
+    width: 130px;
 }
 .topmenu li:first-child a {
     padding-left: 25px;
@@ -39,7 +40,7 @@ html,body {
     text-align: left;
 
 }
-.topmenu .active {
+.topmenu .active a{
     border-left: 1px solid #c8c8c8;
     border-right: 1px solid #c8c8c8;
     background-image: -moz-linear-gradient( 90deg, rgb( 46, 46, 46 ) 0%, rgb( 74, 74, 74 ) 100%);
