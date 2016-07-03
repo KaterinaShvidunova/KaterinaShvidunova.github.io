@@ -49,7 +49,7 @@ body {
 span {
     font-weight: bolder;
 }
-.contry {
+.country {
     float: right;
     margin-top: 35px;
 }
@@ -58,9 +58,13 @@ figure {
     display: inline-block;
     text-align: center;
     font-size: 10px;
-}
-figcaption a {
     color: rgb( 18, 138, 167 );
+}
+.country a {
+    text-decoration: none;
+}
+figcaption {
+    text-decoration: underline;
 }
 .photo {
     margin-bottom: -3px;
