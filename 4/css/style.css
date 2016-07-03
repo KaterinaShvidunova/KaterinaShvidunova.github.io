@@ -4,6 +4,7 @@
 }
 body {
     background-image: url(../img/background.png);
+    font-family: Tahoma, Arial;
 }
 .conteiner {
     box-sizing: border-box;
@@ -76,7 +77,7 @@ nav {
 .topmenu li{
     display: inline-block;
     text-align: center;
-    width: 139px;
+    width: 138px;
     line-height: 40px;
     position: relative;
     
@@ -120,7 +121,7 @@ ul.submenu>li>a:hover {
 }
 .leftside {
     box-sizing: border-box;
-    width: 210px;
+    width: 226px;
     background: #edeef0;
     border: 1px solid #c7cacf;
     padding: 15px;
@@ -135,13 +136,13 @@ ul.submenu>li>a:hover {
     padding-bottom: 20000px;
     margin-bottom: -20000px;
     float: left;
-    width: 576px;
+    width: 547px;
 }
 .rightside {
     box-sizing: border-box;
     padding: 15px;
     text-align: center;
-    width: 210px;
+    width: 226px;
     background: #edeef0;
     border: 1px solid #c7cacf;
     padding-bottom: 20000px;
@@ -163,4 +164,9 @@ ul.submenu>li>a:hover {
     font-size: 20px;
     font-weight: bolder;
     color: rgb( 66, 76, 67 );
+}
+footer {
+    color: rgb( 255, 255, 255 );
+    text-align: center;
+    margin: 5px 0;
 }
