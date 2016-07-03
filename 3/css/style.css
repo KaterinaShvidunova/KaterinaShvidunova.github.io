@@ -1,9 +1,11 @@
-body {
+html,body {
     background: #f9f9f9;
+    height: 100%;
 }
 .conteiner {
     box-sizing: border-box;
     width: 1060px;
+    min-height: 100%;
     margin: 0 auto;
     padding: 50px 45px;
     background: #ffffff;
