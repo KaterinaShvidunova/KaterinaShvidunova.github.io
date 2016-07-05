@@ -19,13 +19,15 @@ html,body {
 }
 .topmenu {
     line-height: 40px;
+    font-size: 0;
 }
+
 .topmenu li {
     display: inline-block;
     width: 130px;
     text-align: center;
     text-shadow: 0.5px 0.866px 1px rgb( 0, 0, 0 );
-    margin-left: -0.155em;
+    /*margin-left: -0.155em;*/
 }
 .topmenu li:first-child {
     margin-left: 0;
@@ -36,6 +38,8 @@ html,body {
     text-decoration: none;
     color: white;
     width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 .topmenu .active a{
@@ -47,6 +51,7 @@ html,body {
 .topmenu a:hover {
     background-image: -moz-linear-gradient( 90deg, rgb( 46, 46, 46 ) 0%, rgb( 74, 74, 74 ) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb( 46, 46, 46 ) 0%, rgb( 74, 74, 74 ) 100%);
+    
 }
 .main {
     margin-top: 40px;
