@@ -49,18 +49,24 @@ body {
 span {
     font-weight: bolder;
 }
+.contacts a {
+    display: block;
+    color: rgb( 18, 138, 167 );
+    text-decoration: none;
+    
+}
 .country {
     float: right;
     margin-top: 35px;
 }
 
 figure {
-    display: inline-block;
     text-align: center;
     font-size: 10px;
     color: rgb( 18, 138, 167 );
 }
 .country a {
+    display: inline-block;
     text-decoration: none;
 }
 figcaption {

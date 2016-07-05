@@ -24,14 +24,21 @@ img {
 
 p {
     font-size: 18px;
-    margin-left: 25px;
-    
+    margin: 15px;
+}
+
+.profile p, a, .phone p, .feedback p {
+    margin: 5px 15px;
 }
 li {
     font-size: 18px;
 }
 hr {
-    margin: 14px;
+    display: block;
+    margin: 0 auto;
     width: 100%;
     
+}
+.profile, .phone, .feedback {
+    margin-top: 30px;
 }

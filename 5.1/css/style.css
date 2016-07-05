@@ -2,9 +2,13 @@
     font-family: 'Helvetica Neue';
     src: url(../font/HelveticaNeue.ttf);
 }
-.conteiner {
-    width: 1215px;
-    margin: 0 auto;
+body, html {
+    width: 100%;
+    background: url(../img/bg-2.jpg);
+    background-size: cover;
+}
+
+.main-conteiner {
     font-family: 'Helvetica Neue', Arial;
 }
 nav {
@@ -59,48 +63,47 @@ nav {
     padding-left: 16px;
     
 }
-
-.wrapper {
-    background: url(../img/background.png);
-    height: 1028px;
+.conteiner {
     position: relative;
+    min-height: 93vh;
+}
+.main {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 400px;
+    height: 451px;
 }
 .head {
-    width: 565px;
-    height: 65px;
+    height: 50px;
     background: rgba(0, 0, 0, .5);
-    margin: 0 auto;
-    margin-bottom: 1px;
-    position: absolute;
-    top: 212px;
-    left: 353px;
     text-align: center;
-    line-height: 65px;
+    line-height: 50px;
     font-size: 24px;
     color: #fff;
+    margin-bottom: 1px;
     
 }
 .form {
-    width: 565px;
-    height: 550px;
+    height: 400px;
     background: rgba(0, 0, 0, .5);
-    margin: 0 auto;
-    position: absolute;
-    top: 278px;
-    left: 353px;
     text-align: center;
+    padding: 10px;
 }
 .fb {
     width: 276px;
-    margin: 35px auto;
-    margin-bottom: 13px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 .ou {
     color: #666;
 }
 input[type="text"], [type="email"], [type="password"] {
     display: block;
-    margin: 17px auto;
+    margin: 10px auto;
     width: 275px;
     height: 35px;
     background: #0f0f0f;
@@ -109,15 +112,15 @@ input[type="text"], [type="email"], [type="password"] {
     padding: 1px 18px;
     box-sizing: border-box;
     color: rgb( 255, 251, 251 );
-}
+    }
 .checkbox {
     display: block;
-    margin: 35px auto;
+    margin: 10px auto;
     color: rgb( 255, 251, 251 );
 }
 input[type="submit"] {
     display: block;
-    margin: 15px auto;
+    margin: 10px auto;
     width: 148px;
     height: 34px;
     background: url(../img/button.png);
