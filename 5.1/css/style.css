@@ -92,14 +92,45 @@ nav {
     background: rgba(0, 0, 0, .5);
     text-align: center;
     padding: 10px;
+    
 }
-.fb {
-    width: 276px;
+.facebook {
+    display: flex;
+    width: 275px;
+    height: 36px;
     margin: 0 auto;
+    line-height: 36px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #2b4170; 
+    background: linear-gradient(top, #3b5998, #2b4170);
     margin-bottom: 10px;
+    font-weight: bolder;
+}
+.facebook-icon {
+    width: 42px;
+    border-right: 1px solid #4e67a9;
+}
+.facebook-text {
+    text-align: center;
+    width: 191px;
+    font-size: 16px;
+}
+.facebook span {
+    font-weight: 500;
+}
+.angle {
+    width: 42px;
+}
+.facebook a {
+    display: inline-block;
+    text-decoration: none;
+    color: azure;
+    width: 100%;
+    line-height: 36px;
 }
 .ou {
-    color: #666;
+    color: #999;
 }
 input[type="text"], [type="email"], [type="password"] {
     display: block;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HomeWork5.1</title>
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,24 +26,36 @@
                 Cadastre-se
             </div>
             <div class="form">
-                <div class="fb">
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="img/fb.png" alt="">
-                    </a>
-                </div>
-                <div>
+              <div class="facebook">
+               <div class="facebook-icon">
+                   <a href="#">
+                       <i class="fa fa-facebook" aria-hidden="true"></i>
+                   </a>
+               </div>
+               <div class="facebook-text">
+                   <a href="#">
+                       Log In <span>with</span> Facebook
+                   </a>
+               </div>
+               <div class="angle">
+                   <a href="#">
+                       <i class="fa fa-angle-right" aria-hidden="true"></i>
+                   </a>
+               </div>
+               </div>
+                 <div>
                     <div class="line"></div>
                     <span class="ou">OU</span>
                     <div class="line"></div>
-                </div>
+                 </div>
                 <form action="">
                     <input type="text" name="f_name" id="" placeholder="First Name" required>
-                    <input type="text" name="l_name" id="" placeholder="Last name" required>
-                    <input type="email" name="" id="" placeholder="Email Address" required>
-                    <input type="password" name="" id="" placeholder="Choose Password" required>
-                    <input type="password" name="" id="" placeholder="Password Confirm" required>
+                    <input type="text" name="l_name" id="" placeholder="Last Name" required>
+                    <input type="email" name="Email" id="" placeholder="Email Address" required>
+                    <input type="password" name="password" id="" placeholder="Choose Password" required>
+                    <input type="password" name="password" id="" placeholder="Password Confirm" required>
                     <label class="checkbox">
-                        <input type="checkbox" name="" id="">
+                        <input type="checkbox" name="Send" id="">
                         Send me Youbike updates and tips
                     </label>
                     <input type="submit" value="Create my Account">
