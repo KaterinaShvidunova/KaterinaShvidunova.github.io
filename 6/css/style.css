@@ -1,0 +1,93 @@
+.conteiner {
+    width: 909px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+/*--------START Header ---------*/
+.header_nav {
+    width: 909px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    line-height: 27px;
+    margin: 10px;
+    font-family: 'Arial', sans-serif;
+}
+.phone {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.phone a {
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb( 94, 105, 109 );
+}
+.telephone {
+     border-radius: 50%;
+  background-image: -moz-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    width: 22px;
+    height: 22px;
+}
+.telephone img {
+   width: 22px;
+    height: 22px;
+}
+.login {
+    border-radius: 3px;
+  background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+  box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+    line-height: 27px;
+    font-size: 12px;
+}
+.login form {
+    display: inline-block;
+}
+input[type="text"],input[type="password"]{
+    width: 105px;
+    height: 18px;
+}
+.navi {
+    border: 1px solid rgb( 189, 196, 199 );
+}
+
+/*---------- END Header -----------*/
+/*---------- START Nav ------------*/
+.topmenu li {
+    display: inline-block;
+}
+/*---------- END Nav --------------*/
+/*----------START Search-----------*/
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.search_avto, .search_tire, .search_disk {
+    border: 1px solid rgb( 156, 156, 157 );
+    border-radius: 16px;
+    box-shadow: 2.5px 4.33px 5px 0px rgb( 150, 150, 150 );
+    height: 133px;
+    padding: 2px 10px;
+}
+.Shape_8 {
+  border-radius: 50%;
+  background-image: -moz-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+  position: absolute;
+  left: 52px;
+  top: 22px;
+  width: 22px;
+  height: 21px;
+  z-index: 113;
+}
+
+
+/*----------END Search-------------*/
+
+
+
+
