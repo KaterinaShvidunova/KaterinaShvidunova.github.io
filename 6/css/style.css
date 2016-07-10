@@ -257,6 +257,7 @@ input[type="submit"]:hover {
     font-family: "Arial";
     color: rgb( 21, 68, 104 );
     font-weight: bolder;
+    text-align: center;
 }
 .find a {
     display: block;
@@ -332,6 +333,14 @@ input[type="checkbox"] {
 }
 .left_find .select:first-child {
     height: 30px;
+}
+.find_tire>p, .find_disk>p {
+    display: block;
+    height: 16px;
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb( 21, 68, 104 );
+    font-weight: bolder;
 }
 /*----------END Find-------------*/
 /*----------START Main-----------*/
