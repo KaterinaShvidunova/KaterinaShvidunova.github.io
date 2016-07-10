@@ -1,93 +1,569 @@
+@import url(http://allfont.ru/allfont.css?fonts=lucida-sans-unicode);
 .conteiner {
     width: 909px;
     background-color: #fff;
     margin: 0 auto;
 }
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
 /*--------START Header ---------*/
 .header_nav {
     width: 909px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     line-height: 27px;
-    margin: 10px;
     font-family: 'Arial', sans-serif;
 }
 .phone {
     position: relative;
-    width: 300px;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .phone a {
     text-decoration: none;
     font-size: 19px;
     color: rgb( 94, 105, 109 );
+    margin: auto 4px;
 }
 .telephone {
      border-radius: 50%;
   background-image: -moz-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 .telephone img {
-   width: 22px;
-    height: 22px;
+   width: 20px;
+    height: 20px;
 }
 .login {
     border-radius: 3px;
   background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
   background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
   box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+    height: 27px;
     line-height: 27px;
+    font-family: 'Lucida Sans Unicode', arial;
     font-size: 12px;
+    width: 496px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 10px;
+    padding-right: 10px;
+}
+.man {
+    width: 14px;
+    height: 18px;
+}
+.login a {
+    color: rgb( 191, 191, 191 );
 }
 .login form {
-    display: inline-block;
+    display: inline-block; 
 }
 input[type="text"],input[type="password"]{
     width: 105px;
-    height: 18px;
+    height: 12px;
+    border: 1px solid rgb( 155, 161, 163 );
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+    font-family: 'Lucida Sans Unicode', arial;
+    font-size: 12px;
 }
+input[type="submit"], input[type="submit"]:active, input[type="submit"]:focus {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Lucida Sans Unicode', arial;
+    font-size: 12px;
+    color: #fff;
+    border-right: 1px solid #fff;
+    width: 50px;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+.login .registration {
+    text-decoration: none;
+    color: #fff;
+}
+
 .navi {
     border: 1px solid rgb( 189, 196, 199 );
+    width: 85px;
+    height: 22px; 
+    box-sizing: border-box;
+    border-radius: 16px;
+    box-shadow: 1px 2px 5px 0px rgb( 150, 150, 150 );
+    line-height: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 7px;
+}
+.background {
+    position: relative;
+}
+.bg_text {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #052039;
+    width: 265px;
+    height: 123px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.bg_text a {
+    font-size: 37px;
+    font-family: "Lucida Sans Unicode";
+    color: #cecece;
+    text-decoration: none;
+}
+.bg_text p {
+    font-size: 25px;
+    font-family: "Lucida Sans Unicode";
+    text-align: right;
+    color: #a41502;
 }
 
 /*---------- END Header -----------*/
 /*---------- START Nav ------------*/
-.topmenu li {
-    display: inline-block;
-}
-/*---------- END Nav --------------*/
-/*----------START Search-----------*/
-.search {
+.topmenu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items:center;
+    border: 1px solid rgb( 13, 22, 66 );
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb( 0, 0, 0 ) 0%, rgb( 87, 96, 104 ) 100%);
+    box-shadow: 1.5px 2.598px 5px 0px rgb( 0, 0, 0 );
+    height: 30px;
+    line-height: 30px;
 }
-.search_avto, .search_tire, .search_disk {
+.topmenu ul {
+    float: right;
+    width: 78%;
+    text-align: center;
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode";
+}
+.topmenu li {
+    display: inline-block;
+    width: 105px;
+    margin-left: 0;
+}
+.topmenu a {
+    display: block;
+    text-decoration: none;
+    color: #b1bcc0;
+    width: 105px;
+    height: 26px;
+    line-height: 26px;
+}
+.topmenu a:hover {
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    color: #fff;
+    border-radius: 15px;
+}
+.tovar {
+    width: 22%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tovar div {
+    font-size: 11px;
+    font-family: Arial;
+    color: rgb( 146, 155, 159 );
+    margin-left: 5px;
+}
+.korzina {
+    width: 21px;
+    height: 21px;
+}
+
+.tovar_color {
+    font-size: 12px;
+    color: rgb( 13, 90, 143 );
+}
+
+
+/*---------- END Nav --------------*/
+/*----------START Find-----------*/
+.find {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.find form {
+    font-size: 10px;
+}
+.find_avto, .find_tire, .find_disk {
     border: 1px solid rgb( 156, 156, 157 );
     border-radius: 16px;
     box-shadow: 2.5px 4.33px 5px 0px rgb( 150, 150, 150 );
     height: 133px;
     padding: 2px 10px;
 }
-.Shape_8 {
-  border-radius: 50%;
-  background-image: -moz-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
-  position: absolute;
-  left: 52px;
-  top: 22px;
-  width: 22px;
-  height: 21px;
-  z-index: 113;
+.find_avto {
+    width: 400px;
+}
+.left_side {
+    float: left;
+    width: 48%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-right: 4%;
+}
+.right_side {
+    float: right;
+    width: 48%;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.find_tire {
+    width: 170px;
+}
+.find_disk {
+   width: 240px; 
+}
+.select {
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.select p {
+    width: 70px;
+}
+.h {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb( 21, 68, 104 );
+    font-weight: bolder;
+}
+.find a {
+    display: block;
+    float: right;
+    font-family: Arial;
+    font-size: 14px;
+    color: rgb( 21, 68, 103 );
+    font-style: italic;
+    clear: both;
+}
+.find_avto select {
+    width: 100px;
+}
+.find span {
+    color: #77858b;
+}
+.find_tire form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.find_tire .select {
+    justify-content: flex-start;
+}
+.find_tire .select p {
+    text-align: right;
+    width: 50px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.find_tire select {
+    width: 50px;
+}
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.checkbox > p {
+    width: 50px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.checkbox p {
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    
+}
+.left_find {
+    float: left;
+    width: 61%;
+    margin-right: 4%;
+}
+.right_find {
+    float: right;
+    width: 35%;
+    margin-top: -16px;
+}
+.left_find .select {
+    height: 34px;
+}
+.find_disk select {
+    width: 58px;
+}
+.find_disk > p {
+    display: inline-block;
+    width: 130px;
+}
+.left_find .select:first-child {
+    height: 30px;
+}
+/*----------END Find-------------*/
+/*----------START Main-----------*/
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.navbar {
+    width: 22%;
+}
+.content {
+    border-radius: 3px;
+  background-image: -moz-linear-gradient( 90deg, rgb( 35, 75, 93 ) 0%, rgb( 201, 207, 209 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 35, 75, 93 ) 0%, rgb( 201, 207, 209 ) 100%);
+    width: 58%;
+    padding: 15px;
+    box-sizing: border-box;
+  
+}
+.content_1, .content_2, .content_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+.aside {
+    width: 17%;
+}
+.wheel {
+    width: 142px;
+    height: 131px;
+    background: #fff;
+    border-radius: 3px;
+    display: flex;
+    margin: 5px;
+}
+.text_1 {
+    text-align: center;
+  font-size: 16px;
+  font-family: "Lucida Sans Unicode";
+  color: rgb( 32, 105, 136 );
+    font-weight: bold;
+}
+.text_2 {
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lucida Sans Unicode";
+}
+.text_3 {
+    text-align: center;
+  font-size: 18px;
+  font-family: "Arial";
+  color: rgb( 17, 65, 101 );
+  font-weight: bold;
+  font-style: italic;
 }
 
 
-/*----------END Search-------------*/
 
+.wheel img {
+    display: block;
+    margin: auto;
+    
+}
+.katalog_main {
+    border: 1px solid rgb( 121, 135, 141 );
+    border-radius: 15px;
+    box-shadow: 1.5px 2.598px 3px 0px rgb( 150, 150, 150 );
+    font-size: 14px;
+    font-family: "Lucida Sans Unicode";
+    color: rgb( 17, 65, 101 );
+    height: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+.katalog {
+    font-family: "Lucida Sans Unicode";
+    color: rgb( 17, 65, 101 );
+    border: 1px solid rgb( 121, 135, 141 );
+    border-radius: 15px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    padding: 0 2px;
+    box-sizing: border-box;
+    width: 150px; 
+    line-height: 25px;
+}
+.icon {
+    border-radius: 50%;
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+}
+.katalog_main p, .katalog p {
+    display: block;
+    margin: auto 0;
+}
+.navbar ul ul {
+    list-style: circle;
+    padding-left: 27px;
+    box-sizing: border-box;
+    color: rgb( 17, 65, 101 );
+}
+.navbar ul ul>li {
+    margin: 10px 0;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgb( 17, 65, 101 );
+    font-size: 15px;
+    font-family: "Lucida Sans Unicode";
 
+}
+.navbar a:hover {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+.aside ul {
+    padding-left: 15px;
+    color: rgb( 17, 65, 101 );
+    font-family: "Lucida Sans Unicode";
+}
+.aside li {
+    margin: 10px auto;
+}
+.aside input[type="checkbox"] {
+    display: none;
+}
+.check_aside {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../img/checkbox.png) no-repeat;
+    width: 13px;
+    height: 13px;
+}
+.katalog_aside {
+    width: 120px;
+}
+.aside input[type="submit"] {
+    font-size: 11px;
+    font-family: "Arial";
+    color: rgb( 229, 233, 234 );
+    border: 1px solid rgb( 167, 171, 174 );
+    border-radius: 11px;
+    background-image: -moz-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb( 32, 105, 136 ) 0%, rgb( 17, 65, 101 ) 59.229%, rgb( 12, 50, 86 ) 100%);
+    width: 84px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/*----------END Main-------------*/
+/*----------START Brand_logo-----*/
+.brand_logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.brand_logo img {
+    display: inline-block;
+    margin: 10px;
+}
+/*----------End Brand_logo-------*/
+/*----------START Footer---------*/
+footer {
+    border: 1px solid rgb( 36, 42, 60 );
+    background-color: #213a4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+footer li {
+    display: inline-block;
+    width: 75px;
+    height: 15px;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-right: 1px solid #bec6c9;
+    text-align: center;
+    line-height: 15px;
+}
+footer li a {
+    text-decoration: none;
+    color: #bec6c9;
+}
+footer li a:hover {
+    color: rgb( 82, 171, 203 );
+    text-decoration: underline;
+}
+.copyright {
+    font-size: 10px;
+    font-family: "Arial";
+    color: rgb( 127, 71, 64 );
+    margin: 15px 0;
+}
+/*----------END Footer-----------*/
+
+.ВЫБРАТЬ {
+  
+  text-align: left;
+  position: absolute;
+  left: 809px;
+  top: 779px;
+  width: 55px;
+  height: 8px;
+  z-index: 56;
+}
 
 
