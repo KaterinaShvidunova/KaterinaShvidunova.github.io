@@ -457,25 +457,35 @@ input[type="checkbox"] {
     margin: auto 0;
 }
 .navbar ul ul {
-    list-style: circle;
+    list-style: none;
     padding-left: 27px;
     box-sizing: border-box;
     color: rgb( 17, 65, 101 );
 }
 .navbar ul ul>li {
     margin: 10px 0;
+    position: relative;
 }
 .navbar a {
+    display: block;
     text-decoration: none;
     color: rgb( 17, 65, 101 );
     font-size: 15px;
     font-family: "Lucida Sans Unicode";
 
 }
-.navbar a:hover {
+.navbar ul ul>li::before {
+    content:"\2218";
+    position: absolute;
+    left: -15px;
+}
+.navbar ul ul>li:hover{
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+}
+.navbar ul ul>li:hover::before{
+    font-style: normal;
 }
 .aside ul {
     padding-left: 15px;
