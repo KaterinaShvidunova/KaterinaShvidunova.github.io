@@ -2,30 +2,34 @@
     font-family: 'LeagueGothic';
     src: url(../fonts/LeagueGothic.otf);
 }
+
 .background {
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 960px;
-    margin: 0 auto;
     font-family: 'LeagueGothic';
     padding-top: 5%;
-    padding-bottom: 10%;
+    padding-bottom: 12.1%;
 }
 .logo {
     width: 20%;
 }
 .logo-link {
-    font-size: 47px;
+    font-size: 3rem;
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     text-transform: uppercase;
@@ -51,7 +55,7 @@ nav {
 }
 .menu__link {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
@@ -64,8 +68,6 @@ nav {
     background: rgba(0, 0, 0, 0.5);
 }
 .slider {
-    width: 960px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,31 +76,34 @@ nav {
 }
 .text {
     width: 50%;
-    padding-top: 4%;
+    padding-top: 4.5%;
 }
 .title {
     font-family: 'LeagueGothic';
-    font-size: 60px;
+    font-size: 4rem;
     text-transform:capitalize;
     color: rgb(254, 254, 254);
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
 }
 .subtitle {
-    font-family: 'LeagueGothic';
-    font-size: 33px;
+    font-family: 'LeagueGothic',sans-serif;
     text-transform: uppercase;
+}
+.subtitle--slider {
+    font-size: 2.3rem;
     color: #edbfff;
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
 }
 .paragraph {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     line-height: 1.5;
-    padding-top: 2%;
-    box-sizing: border-box;
-    
+}
+.paragraph--slider {
+    text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
+    padding-top: 1%;
+    box-sizing: border-box;  
 }
 .img-iphone {
     width: 35.6%;
@@ -106,7 +111,8 @@ nav {
 }
 .img-iphone img {
     display: block;
-    height: 110%;
+    float: right;
+    width: 100%;
 }
 .bg-blurb {
     background: linear-gradient(#745083, #322539);
@@ -116,13 +122,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 960px;
-    margin: 0 auto;
-    padding: 5% 0;
+    padding: 5.7% 0;
     box-sizing: border-box;
 }
 .blurb-section {
-    width: 30%;
+    width: 33%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -130,25 +134,21 @@ nav {
 .blurb-text {
     padding: 0 5%;
 }
-.blurd-title {
-    font-size: 30px;
-    font-family: "LeagueGothic";
+.subtitle--blurb {
+    font-size: 2rem;
     color: rgb( 255, 255, 255 );
     text-shadow: 0.5px 1px 0px rgb( 15, 21, 24 );
     text-transform: uppercase;
 }
-.blurd-paragraph {
-    font-size: 16px;
-    font-family: "OpenSans";
+.paragraph--blurb {
     color: rgb(254, 254, 254);
     text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
-    line-height: 1.5;
-    margin: 15px 0;
+    margin: 14px 0;
 }
 .blurb-img {
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    padding: 5px;
+    font-size: 2rem;
+    padding: 4px 9px;
 }
 .blurb-img--transform {
     transform: scaleX(-1);
@@ -156,7 +156,7 @@ nav {
 .blurb-link {
     display: block;
     width: 90%;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-family: "LeagueGothic";
     color: rgb( 255, 255, 255 );
     text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
@@ -168,4 +168,148 @@ nav {
 }
 .blurb-link:hover {
     text-shadow: 0px 0px 8px rgb( 255, 255, 255 );  
+}
+.bg-content {
+    background: #f9f9f9;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+.reviews {
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fff;
+    margin-left: 25px;
+    padding: 2rem;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+.reviews-img {
+    background-image: url(../img/sprite.png);
+    width: 49px;
+    height: 50px;
+    margin-left: -25px;
+}
+.reviews-text {
+    width: 92%;
+}
+
+.paragraph--content {
+  color: rgb( 69, 69, 69 );
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+    
+}
+.subtitle--content {
+    font-size: 2rem;
+    color: rgb( 69, 69, 69 );  
+    text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+}
+.subtitle--pink {
+    color: #edbfff;
+}
+
+.blog {
+    width: 55%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.blog-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+.blog-img-1 {
+    width: 49px;
+    height: 50px;
+    background: url(../img/sprite.png) -49px 0;
+}
+.blog-img-2 {
+    width: 49px;
+    height: 50px;
+    background: url(../img/sprite.png) -97px 0;
+}
+.blog-img-3 {
+    width: 49px;
+    height: 50px;
+    background: url(../img/sprite.png) -145px 0;
+}
+.blog-text {
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+.blog-link {
+    font-family: 'OpenSans', sans-serif;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+@media screen and (max-device-width: 768px) {
+    html, body {
+        font-size: 16px;
+    }
+    .wrapper {
+        width: 96%;
+    }
+    header {
+        display: block;
+    }
+    nav {
+        width: 75%;
+        padding-top: 4%; 
+    }
+    menu__link {
+        font-size: 2rem;
+    }
+    
+}
+@media screen and (max-device-width: 480px) {
+    .wrapper {
+        width: 90%;
+    }
+    nav {
+        display: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .paragraph--slider {
+        display: none;
+    }
+    .blurb {
+        display: block;
+    }
+    .blurb-section {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    wrapper {
+        width: 95%;
+    }
+    nav {
+        display: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .paragraph-slider {
+        display: none;
+    }
+    .text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .img-iphone {
+        display: none;
+    }
 }
