@@ -55,7 +55,7 @@ nav {
 }
 .menu__link {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
@@ -262,21 +262,26 @@ nav {
     }
     nav {
         width: 75%;
-        padding-top: 4%; 
+        padding-top: 4%;
     }
-    menu__link {
+    .menu__link {
         font-size: 2rem;
     }
     
 }
 @media screen and (max-device-width: 480px) {
+    html, body {
+        font-size: 21px;
+    }
     .wrapper {
         width: 90%;
+        margin: 0 auto;
     }
     nav {
         display: none;
     }
     .logo {
+        width: 100%;
         margin: 0 auto;
     }
     .paragraph--slider {
@@ -289,17 +294,33 @@ nav {
         width: 80%;
         margin: 0 auto;
     }
+    .content {
+        display: block;
+        width: 80%;
+    }
+    .reviews {
+        width: 100%;
+    }
+    .blog {
+        width: 100%;
+    }
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 320px) {
+    html, body {
+        font-size: 24px;
+    }
     wrapper {
         width: 95%;
+        margin: 0 auto;
     }
     nav {
         display: none;
     }
     .logo {
         margin: 0 auto;
+        width: 100%;
+        text-align: center;
     }
     .paragraph-slider {
         display: none;
@@ -312,4 +333,14 @@ nav {
     .img-iphone {
         display: none;
     }
+    .content {
+        display: block;
+    }
+    .reviews {
+        width: 100%;
+    }
+    .blog {
+        width: 100%;
+    }
+    
 }
