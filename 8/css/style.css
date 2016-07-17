@@ -25,18 +25,17 @@ header {
     width: 20%;
 }
 .logo-link {
-    font-size: 48px;
+    font-size: 47px;
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     text-transform: uppercase;
     text-decoration: none;
-    position: relative;
 }
 .logo-link--color {
     color: #745083;
 }
 nav {
-    width: 75%;
+    width: 66%;
     text-align: right;
 }
 .menu {
@@ -48,6 +47,7 @@ nav {
 .menu__item {
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     padding: .5%;
+    padding-top: 0;
 }
 .menu__link {
     text-decoration: none;
@@ -70,9 +70,11 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 3.2%;
 }
 .text {
     width: 50%;
+    padding-top: 4%;
 }
 .title {
     font-family: 'LeagueGothic';
@@ -94,27 +96,76 @@ nav {
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     line-height: 1.5;
+    padding-top: 2%;
+    box-sizing: border-box;
     
 }
 .img-iphone {
-    width: 30%;
-    margin-top: -2%;
+    width: 35.6%;
+    margin-top: -1.8%;
 }
 .img-iphone img {
     display: block;
     height: 110%;
 }
-.Nunc_turpis_neque__feugiat_eget_eleifend_et__la {
-  font-size: 16px;
-  font-family: "OpenSans";
-  color: rgb( 255, 255, 255 );
-  line-height: 1.5;
-  text-align: left;
-  text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
-  position: absolute;
-  left: 782px;
-  top: 966px;
-  width: 224px;
-  height: 114px;
-  z-index: 17;
+.bg-blurb {
+    background: linear-gradient(#745083, #322539);
+}
+.blurb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    padding: 5% 0;
+    box-sizing: border-box;
+}
+.blurb-section {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.blurb-text {
+    padding: 0 5%;
+}
+.blurd-title {
+    font-size: 30px;
+    font-family: "LeagueGothic";
+    color: rgb( 255, 255, 255 );
+    text-shadow: 0.5px 1px 0px rgb( 15, 21, 24 );
+    text-transform: uppercase;
+}
+.blurd-paragraph {
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(254, 254, 254);
+    text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.blurb-img {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 5px;
+}
+.blurb-img--transform {
+    transform: scaleX(-1);
+}
+.blurb-link {
+    display: block;
+    width: 90%;
+    font-size: 18px;
+    font-family: "LeagueGothic";
+    color: rgb( 255, 255, 255 );
+    text-shadow: 0.5px 0.866px 0px rgb( 15, 21, 24 );
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: right;
+    
+    
+}
+.blurb-link:hover {
+    text-shadow: 0px 0px 8px rgb( 255, 255, 255 );  
 }
