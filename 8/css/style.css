@@ -150,7 +150,11 @@ nav {
     font-size: 2rem;
     padding: 4px 9px;
 }
-.blurb-img--transform {
+.blurb--img-blok {
+    display: block;
+    width: 2rem;
+}
+.img-transform {
     transform: scaleX(-1);
 }
 .blurb-link {
@@ -204,6 +208,11 @@ nav {
   text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
     
 }
+.paragraph--blog {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
 .subtitle--content {
     font-size: 2rem;
     color: rgb( 69, 69, 69 );  
@@ -217,13 +226,18 @@ nav {
     width: 55%;
     padding: 2rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 .blog-item {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 0.5rem;
+    
 }
 .blog-img-1 {
     width: 49px;
@@ -241,6 +255,7 @@ nav {
     background: url(../img/sprite.png) -145px 0;
 }
 .blog-text {
+    display: inline-block;
     box-sizing: border-box;
     padding-left: 1rem;
 }
@@ -250,6 +265,7 @@ nav {
     font-size: 0.95rem;
     font-weight: bold;
 }
+
 @media screen and (max-device-width: 768px) {
     html, body {
         font-size: 16px;
@@ -283,6 +299,7 @@ nav {
     .logo {
         width: 100%;
         margin: 0 auto;
+        text-align: center;
     }
     .paragraph--slider {
         display: none;
