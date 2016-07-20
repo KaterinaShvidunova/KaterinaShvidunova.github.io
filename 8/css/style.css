@@ -59,6 +59,7 @@ nav {
     color: #fff;
     text-transform: uppercase;
     text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+    white-space: nowrap;
 }
 .menu__item:hover {
     border-bottom: 2px solid #edbfff;
@@ -264,6 +265,24 @@ nav {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: bold;
+}
+@media screen and (min-device-width: 960px) {
+    .background {
+        min-width: 960px;
+    }
+    .wrapper {
+        min-width: 960px;
+        box-sizing: border-box;
+    }
+    .bg-slider {
+        min-width: 960px;
+    }
+    .bg-blurb {
+        min-width: 960px;
+    }
+    .bg-content {
+        min-width: 960px;
+    }
 }
 
 @media screen and (max-device-width: 768px) {
