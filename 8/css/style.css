@@ -21,9 +21,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: 'LeagueGothic';
     padding-top: 5%;
-    padding-bottom: 12.1%;
+    padding-bottom: 10%;
 }
 .logo {
     width: 20%;
@@ -34,6 +33,7 @@ header {
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'LeagueGothic';
 }
 .logo-link--color {
     color: #745083;
@@ -54,6 +54,7 @@ nav {
     padding-top: 0;
 }
 .menu__link {
+    font-family: 'LeagueGothic';
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
@@ -65,6 +66,79 @@ nav {
     border-bottom: 2px solid #edbfff;
     box-sizing: border-box;
 }
+.submenu__link {
+    font-family: 'LeagueGothic';
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
+    white-space: nowrap;
+}
+
+
+
+
+/*__________________________________________*/
+.main-nav {
+    width: 250px;
+}
+.meinmenu {
+    display: block;
+    width: 250px;
+    text-align: center;
+}
+.mainmenu__link {
+    border-bottom: 2px solid #edbfff;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    line-height: 1.1;
+}
+.mainmenu__item {
+    position: relative;
+    margin: 0 auto;
+    line-height: 1.1;
+    border-bottom: none;
+    height: 2rem;
+}
+.submenu {
+    display: none;
+    width: 250px;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background: rgba(54, 41, 62, 0.8);
+    border-radius: 0 0 5px 5px;
+}
+.mainmenu__item:hover {
+    background: rgba(54, 41, 62, 0.8);
+    border-bottom: none;
+    line-height: 1.1;
+    border-radius: 5px 5px 0 0;
+}
+.mainmenu__item:hover .submenu {
+    display: block;
+    line-height: 1.1;
+}
+.submenu__link {
+    display: block;
+    width: 100%;
+    line-height: 1.1;
+}
+.submenu__item:hover {
+    background: rgba(54, 41, 62, 0.9);
+}
+.submenu__item:last-child:hover {
+    background: rgba(54, 41, 62, 0.9);
+    border-radius: 0 0 5px 5px;
+}
+/*__________________________________________*/
+
+
+
+
+
 .bg-slider {
     background: rgba(0, 0, 0, 0.5);
 }
@@ -107,7 +181,7 @@ nav {
     box-sizing: border-box;  
 }
 .img-iphone {
-    width: 35.6%;
+    width: 30%;
     margin-top: -1.8%;
 }
 .img-iphone img {
@@ -266,6 +340,112 @@ nav {
     font-size: 0.95rem;
     font-weight: bold;
 }
+.bg-logos {
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;  
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.img-logos-1 {
+    width: 70px;
+    height: 65px;
+    background: url(../img/logos.png) no-repeat;
+}
+.img-logos-2 {
+    width: 72px;
+    height: 65px;
+    background: url(../img/logos.png) -74px 0 no-repeat;
+}
+.img-logos-3 {
+    width: 65px;
+    height: 65px;
+    background: url(../img/logos.png) -150px 0 no-repeat;
+}
+.img-logos-4 {
+    width: 60px;
+    height: 65px;
+    background: url(../img/logos.png) -217px 0 no-repeat;
+}
+.img-logos-5 {
+    width: 103px;
+    height: 65px;
+    background: url(../img/logos.png) -278px 0 no-repeat;
+}
+.img-logos-6 {
+    width: 82px;
+    height: 65px;
+    background: url(../img/logos.png) -394px 0 no-repeat;
+}
+.bg-section {
+    background: #ececec;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.section-text-1, .section-text-2 {
+    width: 30%;
+}
+.section-text-3 {
+    display: none;
+}
+.section-logo {
+  font-size: 3rem;
+  font-family: "LeagueGothic";
+  color: rgb( 69, 69, 69 );
+  line-height: 1;
+  text-shadow: 0px 1px 0px rgb( 255, 255, 255 );
+    
+}
+.section-logo--color {
+  color: rgb( 185, 185, 185 );
+    
+}
+.paragraph--section {
+    padding-top: 1rem;
+}
+.section-copyright {
+  font-size: 1rem;
+  font-family: "Georgia";
+  color: rgb( 197, 197, 197 );
+  font-style: italic;
+  line-height: 1.5;
+  text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
+  padding: 0.5rem 0 1rem 0;
+}
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-link {
+  font-size: 20px;
+}
+.copyright {
+  font-size: 12px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgb( 255, 255, 255 );
+  width: 20%;
+    text-align: right;
+    
+}
+.copyright--color {
+    font-weight: bold;
+}
+
+
+
 @media screen and (min-device-width: 960px) {
     .background {
         min-width: 960px;
@@ -282,6 +462,9 @@ nav {
     }
     .bg-content {
         min-width: 960px;
+    }
+    .main-nav {
+        display: none;
     }
 }
 
@@ -302,7 +485,21 @@ nav {
     .menu__link {
         font-size: 2rem;
     }
-    
+    footer {
+        display: block;
+    }
+    .menu--footer {
+        padding-bottom: 1rem;
+    }
+    .copyright {
+        width: 100%;
+    }
+    .footer-link {
+        font-size: 20px;
+    }
+    .main-nav {
+        display: none;
+    }
 }
 @media screen and (max-device-width: 480px) {
     html, body {
@@ -339,6 +536,29 @@ nav {
     }
     .blog {
         width: 100%;
+    }
+    .section {
+        display: block;
+    }
+    .section-text-1 {
+        display: none;
+    }
+    .section-text-2, .section-text-3 {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section-text-2 {
+        padding-bottom: 2rem;
+    }
+    .copyright {
+        width:20%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main-nav {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -378,5 +598,19 @@ nav {
     .blog {
         width: 100%;
     }
-    
+    .footer-link {
+        font-size: 20px;
+    }
+    .section-text-2 {
+        padding-bottom: 2rem;
+    }
+    .copyright {
+        width:20%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main-nav {
+        display: block;
+        margin: 0 auto;
+    }
 }
