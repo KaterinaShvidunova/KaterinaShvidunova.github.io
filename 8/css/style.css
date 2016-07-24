@@ -351,12 +351,15 @@ nav {
 }
 .reviews:after {
     content: '';
+    display: block;
     position: absolute;
     right: 40px;
-    bottom: -20px;
-    border-top: 20px solid #fff;
-    border-left: 20px solid transparent;
-    box-shadow: 1px 0px 5px -3px #000;
+    bottom: -15px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 2px 2px 2px -3px #000;
+    background-color: white;
+    transform: rotate(68deg) skew(30deg);
 }
 .reviews-img {
     background-image: url(../img/sprite.png);
