@@ -132,7 +132,7 @@ nav {
 }
 
 .mainmenu__item:hover {
-    background: rgba(54, 41, 62, 0.9);
+    background: rgba(54, 41, 62, 0.8);
     border-bottom: none;
     line-height: 1.2;
     border-radius: 15px 15px 0 0;
