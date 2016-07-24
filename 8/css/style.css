@@ -122,7 +122,8 @@ nav {
 }
 .submenu__item {
     border-top: 1px solid #513e59;
-    border-bottom: 2px solid #35273d;
+    border-bottom: 1px solid #35273d;
+    box-sizing: border-box;
     height: 2.8rem;
     line-height: 2.8rem;
 }
@@ -131,24 +132,25 @@ nav {
 }
 
 .mainmenu__item:hover {
-    background: rgba(54, 41, 62, 0.8);
+    background: rgba(54, 41, 62, 0.9);
     border-bottom: none;
     line-height: 1.2;
     border-radius: 15px 15px 0 0;
     border: 1px solid #051116;
-    border-bottom: none;
 }
 .mainmenu__item:hover .submenu {
     display: block;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 .submenu__link {
     display: block;
     width: 100%;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
 }
 .submenu__item:hover {
     background: rgba(54, 41, 62, 0.9);
+    border-top: 1px solid #513e59;
+    height: 2.8rem;
 }
 .submenu__item:last-child:hover {
     background: rgba(54, 41, 62, 0.9);
