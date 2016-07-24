@@ -127,7 +127,7 @@ nav {
     line-height: 2.8rem;
 }
 .submenu__item:last-child {
-    border-bottom: none;
+    border-radius: 0 0 15px 15px;
 }
 
 .mainmenu__item:hover {
