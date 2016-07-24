@@ -28,7 +28,7 @@ header {
     width: 20%;
 }
 .logo-link {
-    font-size: 3rem;
+    font-size: 4rem;
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px 2px rgb( 0, 0, 0 );
     text-transform: uppercase;
@@ -56,7 +56,7 @@ nav {
 .menu__link {
     font-family: 'LeagueGothic', Arial, sans-serif;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 1px 1.732px 2px rgb( 0, 0, 0 );
@@ -81,12 +81,12 @@ nav {
 
 /*__________________________________________*/
 .main-nav {
-    width: 400px;
+    width: 250px;
     display: none;
 }
 .meinmenu {
     display: block;
-    width: 400px;
+    width: 250px;
     text-align: center;
 }
 .mainmenu__link {
@@ -109,7 +109,7 @@ nav {
 }
 .submenu {
     display: none;
-    width: 400px;
+    width: 250px;
     position: absolute;
     top: 2.7rem;
     left: -1px;
@@ -189,7 +189,7 @@ nav {
     padding-bottom: 3.2%;
 }
 .text {
-    width: 62%;
+    width: 65%;
 }
 .title {
     font-family: 'LeagueGothic', Arial, sans-serif;
@@ -333,7 +333,7 @@ nav {
     padding: 5% 0;
 }
 .reviews-conteiner {
-    width: 42%;
+    width: 45%;
 }
 .reviews {
     position: relative;
@@ -344,7 +344,7 @@ nav {
     justify-content: space-between;
     background: #fff;
     margin-left: 25px;
-    padding: 2rem;
+    padding: 2rem 1rem 2rem 0;
     padding-left: 0;
     box-sizing: border-box;
     box-shadow: 0px 1px 5px -3px #000;
@@ -356,6 +356,7 @@ nav {
     bottom: -20px;
     border-top: 20px solid #fff;
     border-left: 20px solid transparent;
+    box-shadow: 1px 0px 5px -3px #000;
 }
 .reviews-img {
     background-image: url(../img/sprite.png);
@@ -364,7 +365,7 @@ nav {
     margin-left: -25px;
 }
 .reviews-text {
-    width: 92%;
+    width: 90%;
 }
 
 
@@ -403,17 +404,17 @@ nav {
 }
 .blog-img-1 {
     width: 49px;
-    height: 49px;
+    height: 50px;
     background: url(../img/sprite.png) -54px 0;
 }
 .blog-img-2 {
     width: 49px;
-    height: 49px;
+    height: 50px;
     background: url(../img/sprite.png) -107px 0;
 }
 .blog-img-3 {
     width: 49px;
-    height: 49px;
+    height: 50px;
     background: url(../img/sprite.png) -160px 0;
 }
 .blog-text {
@@ -423,10 +424,14 @@ nav {
     width: 89%;
 }
 .blog-links {
+    display: block;
     font-family: 'OpenSans', sans-serif;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 .blog-link {
     display: block;
@@ -542,23 +547,23 @@ footer {
   font-size: 12px;
   font-family: "Open Sans", Arial, sans-serif;
   color: rgb( 255, 255, 255 );
-  width: 20%;
+  width: 50%;
     text-align: right;
     
 }
 .copyright--color {
     font-weight: bold;
 }
-@media screen and (min-device-width: 1024px) {
+/*@media screen and (min-device-width: 1024px) {
     .slider-left {
         left: 2%
     }
     .slider-right {
         right: 2%;
     }
-}
+}*/
 
-@media screen and (min-device-width: 960px) {
+/*@media screen and (min-device-width: 960px) {
     .background {
         min-width: 100%;
     }
@@ -578,22 +583,25 @@ footer {
     .main-nav {
         display: none;
     }
-}
+}*/
 
-@media screen and (max-device-width: 950px) {
-    html, body {
-        font-size: 16px;
-    }
-    
+@media screen and (max-width: 950px) {
+   
     header {
         display: block;
     }
     nav {
-        width: 75%;
+        width: 82%;
         padding-top: 4%;
     }
-    .menu__link {
-        font-size: 2rem;
+    .subtitle--blurb {
+        font-size: 1.8rem;
+    }
+    .paragraph--blurb {
+        font-size: 0.9rem;
+    }
+    .blog-text {
+        width: 83%;
     }
     footer {
         display: block;
@@ -614,11 +622,8 @@ footer {
         padding-left: 0;
     }
 }
-@media screen and (max-device-width: 768px) {
-    html, body {
-        font-size: 21px;
-    }
-    
+@media screen and (max-width: 768px) {
+   
     header {
         padding-bottom: 3rem;
     }
@@ -630,15 +635,22 @@ footer {
         margin: 0 auto;
         text-align: center;
     }
+    .title {
+        font-size: 3rem;
+    }
+    .subtitle {
+        font-size: 2rem;
+    }
     .paragraph--slider {
         display: none;
     }
+    
     .blurb {
         display: block;
     }
     .blurb-section {
         width: 80%;
-        margin: 0 auto;
+        margin: 0.5rem auto;
     }
     .content {
         display: block;
@@ -647,6 +659,10 @@ footer {
     .reviews {
         width: 100%;
         padding-bottom: 0.5rem
+    }
+    .reviews-conteiner {
+        width: 100%;
+        margin: 0 auto;
     }
     .blog {
         width: 100%;
@@ -666,7 +682,7 @@ footer {
         padding-bottom: 2rem;
     }
     .copyright {
-        width:20%;
+        width:50%;
         text-align: center;
         margin: 0 auto;
     }
@@ -680,7 +696,7 @@ footer {
     }
     .logo-conteiner {
         display: inline-block;
-        width: 32.8%;
+        width: 32%;
     }
     .img-logos-1, .img-logos-2, .img-logos-3, .img-logos-4, .img-logos-5, .img-logos-6 {
         margin: 1rem auto;
@@ -708,10 +724,7 @@ footer {
     }
 }
 
-@media screen and (max-device-width: 480px) {
-    html, body {
-        font-size: 30px;
-    }
+@media screen and (max-width: 480px) {
   
     header {
         padding-bottom: 3rem;
@@ -731,34 +744,55 @@ footer {
         display: none;
     }
     .text {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
         text-align: center;
     }
     .img-iphone {
         display: none;
     }
+    .blurb-section {
+        width: 100%;
+    }
     .content {
         display: block;
+        width: 85%;
     }
     .reviews {
+        width: 90%;
+        height: 220px;
+    }
+    .reviews-text {
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    .reviews-text {
+        width: 85%;
+    }
+    .blog {
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .blog-conteiner {
         width: 100%;
         margin: 0 auto;
     }
+    .blog-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .blog-text {
-        width: 90%;
+        width: 82%;
     }
     .footer-link {
-        font-size: 20px;
+        font-size: 0.9rem;
     }
     .section-text-2 {
         padding-bottom: 2rem;
     }
     .copyright {
-        width:20%;
+        width:50%;
         text-align: center;
         margin: 0 auto;
     }
@@ -788,7 +822,7 @@ footer {
         display: block;
     }
 }
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
     .menu--footer {
         display: none;
     }
