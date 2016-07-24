@@ -126,6 +126,9 @@ nav {
     height: 2.8rem;
     line-height: 2.8rem;
 }
+.submenu__item:last-child {
+    border-bottom: none;
+}
 
 .mainmenu__item:hover {
     background: rgba(54, 41, 62, 0.8);
