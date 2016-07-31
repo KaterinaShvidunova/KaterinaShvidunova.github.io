@@ -296,7 +296,6 @@ input[type="checkbox"] {
 }
 .checkbox {
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;
 }
 .checkbox > p {
@@ -346,7 +345,6 @@ input[type="checkbox"] {
 /*----------START Main-----------*/
 .main {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
 }
@@ -495,16 +493,7 @@ input[type="checkbox"] {
 .aside li {
     margin: 10px auto;
 }
-.aside input[type="checkbox"] {
-    display: none;
-}
-.check_aside {
-    display: inline-block;
-    vertical-align: middle;
-    background: url(../img/checkbox.png) no-repeat;
-    width: 13px;
-    height: 13px;
-}
+
 
 .katalog_aside {
     width: 120px;
