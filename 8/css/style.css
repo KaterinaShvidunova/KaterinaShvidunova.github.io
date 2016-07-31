@@ -197,6 +197,9 @@ nav {
 .text {
     width: 65%;
 }
+.title-link {
+    text-decoration: none;
+}
 .title {
     font-family: 'LeagueGothic', Arial, sans-serif;
     font-size: 4rem;
@@ -374,6 +377,13 @@ nav {
 .slider-btn--reviews {
     margin: 5% auto;
 }
+.slider-btn--color::before {
+    background: rgb(255,255,255);
+}
+.slider-btn__radio:checked+.slider-btn--color::before {
+    background: #000;
+    border: 3px solid rgb(255,255,255);
+}
 
 
 .paragraph--content {
@@ -472,7 +482,7 @@ nav {
 .logos {
     display: flex;
     justify-content: space-around;
-    padding: 2rem;
+    padding: 3%;
     box-sizing: border-box;
 }
 .img-logos-1 {
@@ -517,8 +527,8 @@ nav {
 .section {
     display: flex;
     justify-content: space-between;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .section-text-1, .section-text-2 {
     width: 30%;
@@ -539,7 +549,7 @@ nav {
     
 }
 .paragraph--section {
-    padding-top: 1rem;
+    padding-top: 2%;
 }
 .section-copyright {
   font-size: 1rem;
@@ -548,15 +558,15 @@ nav {
   font-style: italic;
   line-height: 1.5;
   text-shadow: 0.5px 0.866px 0px rgb( 255, 255, 255 );
-  padding: 0.5rem 0 1rem 0;
+  padding: 1% 0 2% 0;
 }
 .bg-footer {
     background: url(../img/bg-footer.png) no-repeat;
     background-size: cover;
 }
 footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -577,7 +587,7 @@ footer {
 }
 @media screen and (min-device-width: 1700px) {
     html {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -625,7 +635,7 @@ footer {
         display: block;
     }
     .menu--footer {
-        padding-bottom: 1rem;
+        padding-bottom: 2%;
     }
     .copyright {
         width: 100%;
@@ -643,7 +653,7 @@ footer {
 @media screen and (max-width: 768px) {
    
     header {
-        padding-bottom: 3rem;
+        padding-bottom: 5%;
     }
     nav {
         display: none;
@@ -668,7 +678,7 @@ footer {
     }
     .blurb-section {
         width: 80%;
-        margin: 10% auto;
+        margin: 5% auto;
     }
     .content {
         display: block;
@@ -676,7 +686,7 @@ footer {
     }
     .reviews {
         width: 100%;
-        padding-bottom: 0.5rem
+        padding-bottom: 7%;
     }
     .reviews-conteiner {
         width: 100%;
@@ -697,7 +707,7 @@ footer {
         margin: 0 auto;
     }
     .section-text-2 {
-        padding-bottom: 2rem;
+        padding-bottom: 4%;
     }
     .copyright {
         width:50%;
@@ -707,7 +717,7 @@ footer {
     .main-nav {
         display: block;
         margin: 0 auto;
-        margin-top: 1rem;
+        margin-top: 2%;
     }
     .logos {
         display: block;
@@ -717,7 +727,7 @@ footer {
         width: 32%;
     }
     .img-logos-1, .img-logos-2, .img-logos-3, .img-logos-4, .img-logos-5, .img-logos-6 {
-        margin: 1rem auto;
+        margin: 2% auto;
     } 
     .slider-img-left {
         padding-left: 0;
@@ -734,14 +744,14 @@ footer {
         margin: 0 auto;
     }
     footer {
-        padding-top: 1rem;
-        padding-bottom: 3rem;
+        padding-top: 2%;
+        padding-bottom: 5%;
     }
     .slider-btn {
         padding: 10% 0;
     }
     .slider-btn--reviews{
-        padding: 10% 0;
+        padding: 5% 0;
     }
     .reviews:after {
         display: none;
@@ -751,7 +761,7 @@ footer {
 @media screen and (max-width: 480px) {
   
     header {
-        padding-bottom: 3rem;
+        padding-bottom: 5%;
     }
     nav {
         display: none;
@@ -768,7 +778,7 @@ footer {
         padding: 15% 0;
     }
     .slider-btn--reviews{
-        padding: 10% 0;
+        padding: 5% 0;
     }
     .paragraph-slider {
         display: none;
@@ -819,7 +829,7 @@ footer {
         font-size: 0.9rem;
     }
     .section-text-2 {
-        padding-bottom: 2rem;
+        padding-bottom: 4%;
     }
     .copyright {
         width:50%;
@@ -829,7 +839,7 @@ footer {
     .main-nav {
         display: block;
         margin: 0 auto;
-        margin-top: 1rem;
+        margin-top: 2%;
     }
     .logos {
         display: block;
@@ -839,7 +849,7 @@ footer {
         width: 48%;
     }
     .img-logos-1, .img-logos-2, .img-logos-3, .img-logos-4, .img-logos-5, .img-logos-6 {
-        margin: 1rem auto;
+        margin: 2% auto;
     } 
     .slider-img-left {
         padding-left: 0;
@@ -860,7 +870,7 @@ footer {
         display: none;
     }
     footer {
-        padding-bottom: 1rem;
+        padding-bottom: 2%;
     }
      .reviews:after {
         display: none;
