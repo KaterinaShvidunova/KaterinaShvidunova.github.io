@@ -1,9 +1,17 @@
-function number() {
+function number(a) {
     var a = prompt('Введите число');
-    var b = prompt('Введите степень');
-    if(!a || !b){
+    if(!a || isNaN(a)) {
         alert('Введите корректные данные');
         number();
+    } else {
+        exponent(a);
+    }
+}
+function exponent(a,b){
+    var b = prompt('Введите степень');
+    if(!b || isNaN(b)) {
+        alert('Введите корректные данные');
+        exponent(a,b);
     } else {
         pow(a,b);
     }
@@ -31,6 +39,9 @@ function authorization() {
     var arr = [];
     for (var i=1; i<6; i++){
       arr[i]=prompt('Имя '+i);
+		if(arr[i]=='' || arr[i]==null) {
+			i--;
+		}
     }
     var yourName = prompt('Введите ваше имя');
     var yourNameLowerCase =yourName.toLowerCase();
@@ -38,7 +49,7 @@ function authorization() {
         var i=1;
     do {
         arrItem = arr[i].toLocaleLowerCase();
-        if(arrItem==yourNameLowerCase && arr[i]!==''){
+        if(arrItem==yourNameLowerCase){
             alert('Вы успешно прошли авторизацию, '+yourName+'!');
             break;
         } else if(i<5){
