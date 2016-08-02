@@ -14,8 +14,10 @@ function pow(a,b) {
     for (var i=1; i<b; i++){
         result = result*a;
     }
-    } else if(b==0){
+    } else if(b==0 && a!=0){
         result = 1;
+    } else if(b==0 && a==0) {
+        result = 0;
     } else {
         for (var i=1; i<-b; i++){
         result = result*a;
