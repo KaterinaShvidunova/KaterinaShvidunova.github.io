@@ -1,3 +1,5 @@
+(function() {
+var number;
 function number(a) {
     var a = prompt('Введите число');
     if(!a || isNaN(a)) {
@@ -62,3 +64,4 @@ function authorization() {
     } while (i<6);
     
 }
+	})();

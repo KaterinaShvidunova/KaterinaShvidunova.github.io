@@ -1,0 +1,48 @@
+body {
+	background: #eee;
+	font-family: Arial, sans-serif;
+}
+.container {
+	width: 60%;
+	height: 500px;
+	background: #fff;
+	border: 2px solid black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 10px 70px;
+	margin: auto;
+	box-sizing: border-box;
+}
+.list-item {
+	list-style: none;
+}
+.title-container {
+	text-align: center;
+}
+.answer-item {
+	display: block;
+}
+.checkbox-item {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.myButton {
+	display: block;
+	margin: 10px auto;
+	width: 260px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 16px;
+	background: #cbe2ef;
+	border: 1px solid #000;
+}
+.myButton:hover {
+	background: #85c1e5;
+	cursor: pointer;
+}
+.myButton:focus {
+	outline: none;
+}
